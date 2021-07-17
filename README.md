@@ -1,5 +1,5 @@
 # Bank-Management-
-This is the 1st management system based project which I made in my 1st semester in college in 2020. 
+ 
 This project is made using C++ programming language.
 
 This project is a bank management based project which starts with Login/Register options for the user. 
