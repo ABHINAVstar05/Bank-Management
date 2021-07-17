@@ -15,7 +15,9 @@ class Bank {
         void transaction();
         void view_details();
 };
+
 // for REGISTRATION....
+
 void Bank::registration(){
     cout<<"\n\n";
     string id, password ;
@@ -39,7 +41,9 @@ void Bank::registration(){
     cout<<"Your assigned account number for all your future reference (including transaction details) will be : "<<acct_no;
     cout<<"\n\n\n";
 }
+
 // for LOGIN.....
+
 void Bank::login(){
     cout<<"\n\n";
     string id, password ;
@@ -51,7 +55,9 @@ void Bank::login(){
     cout<<"\n\nLogin successful." ;
     cout<<"\n\n\n";
 }
+
 //for DEPOSIT.......
+
 void Bank::Deposit(){
     cout<<"\nYour current account balance : Rs."<<curr_balance<<"\n" ;
     float dep;
@@ -60,7 +66,9 @@ void Bank::Deposit(){
     curr_balance += dep ;
     cout<<"Available balance : Rs."<<curr_balance<<"\n\n";
 }
+
 //for WITHDRAWAL........
+
 void Bank::Withdrawal(){
     cout<<"\nYour current account balance : Rs."<<curr_balance<<"\n" ;
     float withD;
@@ -76,6 +84,7 @@ void Bank::Withdrawal(){
 }
 
 //for TRANSACTION.... (executes deposit() or withdrawal() on the basis of option chosen.)
+
 void Bank::transaction(){
     int f ;
     cout<<"Please select one of the available options.\n\n"
@@ -89,7 +98,9 @@ void Bank::transaction(){
         case 2 : Bank::Withdrawal() ;
     }
 }
+
 //for VIEW DETAILS.......
+
 void Bank::view_details(){
     int a_num ;
     cout<<"Enter your account number : ";
@@ -98,6 +109,7 @@ void Bank::view_details(){
     cout<<"Name : "<<name ;
     cout<<"\nAvailable balance in your account : Rs."<<curr_balance<<"\n\n\n";
 }
+
 //DRIVER FUNCTION begins....
 
 int main(){
@@ -116,10 +128,12 @@ int main(){
         case 2 : obj1.login() ;
         break ;
     }
+        
     //if login details matches then the code will move ahead otherwise it will show invalid input.
     //after registration the code will move ahead as it is....
 
     //TRANSACTION and VIEW DETAILS calling......
+    
     int func2 ;
     int n = 0 ;
     do{
